@@ -4,7 +4,7 @@ function HoneyBlock(props) {
     const [show, setShow] = useState(false);
     console.log({ props })
     return (
-         <div className = "" style = {
+         <div className = "" data-aos="fade-up" data-aos-offset="200" data-aos-duration="1000" style = {
             { display: "flex", alignItems: "center", position: "relative" }}>
         <div className = "item"
         onMouseEnter = {

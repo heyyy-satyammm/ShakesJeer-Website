@@ -7,12 +7,12 @@ import DepartMentBook from "./DepartMentBook";
 const About = () => {
 
    return (
-      <div>
+      <div data-aos="fade-up" data-aos-offset="20">
          <div id="section_logo">
-            <div className="section_logo">
+            <div className="section_logo" data-aos="fade-up" data-aos-offset="200" data-aos-duration="1000">
                <img style={{ width: "300px", height: "300px",backgroundColor:"red", borderRadius:"50%" }} src={logo} alt="" />
             </div>
-            <div className="box">
+            <div className="box" data-aos="fade-up" data-aos-offset="200" data-aos-duration="1000"> 
                <span></span>
                <p>We're a highly motivated team of talented undergrads of NSUT who are all commited to the cause : proliferate
                   more involvement of students in the open mics as we provide a platform for the talent that is concealed
@@ -25,7 +25,7 @@ const About = () => {
                   person, student or not, across the country with the right passion and the will to participate.</p>
             </div>
          </div>
-         <div>
+         <div data-aos="fade-up" data-aos-offset="200" data-aos-duration="1000" >
             <h1 >Our Team</h1>
             <hr style={{ marginBottom: "50px" }}/>
             <div className="honey">
@@ -73,9 +73,9 @@ const About = () => {
 
             </div>
          </div>
-         <h1>Departments</h1>
+         <h1 data-aos="fade-up" data-aos-offset="200" data-aos-duration="1000">Departments</h1>
          <hr />
-         <div id="department">
+         <div id="department" data-aos="fade-up" data-aos-offset="200" data-aos-duration="1000">
             <DepartMentBook
                department="Tech Team"
                teamMember="Rv, Luv, saksham, rv, vansh, karanm devansh, sdfds, fsdf, fsfsdfs, fsf, sf, sfsfsfsdf, ffsfsfsfsfsdf,"

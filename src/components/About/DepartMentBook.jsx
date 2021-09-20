@@ -1,7 +1,7 @@
 import React from 'react'
 
 function DepartMentBook(props) {
-    return ( <div className = "card "
+    return ( <div className = "card " data-aos="fade-up" data-aos-offset="200" data-aos-duration="1000"
         style = {
             { height: "55vh" } } >
         <div className = "imgBox" >

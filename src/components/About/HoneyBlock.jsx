@@ -23,7 +23,7 @@ function HoneyBlock(props) {
         src = { props.image }
         alt = "" />
         </div> <p className = { show ? "honeyDiv" : "notHoneyDiv" } >
-        <h1> { props.name } </h1><hr />
+        <h1> { props.name } </h1>
         <p> { props.position } </p></p>
         </div>
     )

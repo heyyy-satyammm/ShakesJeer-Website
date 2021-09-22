@@ -13,7 +13,7 @@ const About = () => {
                <img src={logo} alt="" />
                {/* style={{ width: "450px", height: "450px",backgroundColor:"red", borderRadius:"50%" }} */}
             </div>
-            <div className="box" data-aos="fade-up" data-aos-offset="200" data-aos-duration="1000"> 
+            <div className="box" data-aos="fade-up" data-aos-offset="200" data-aos-duration="800"> 
                <span></span>
                <p>We're a highly motivated team of talented undergrads of NSUT who are all commited to the cause : proliferate
                   more involvement of students in the open mics as we provide a platform for the talent that is concealed
@@ -27,7 +27,7 @@ const About = () => {
             </div>
          </div>
          <div data-aos="fade-up" data-aos-offset="200" data-aos-duration="1000" >
-            <h1 className="our_team">Our Team</h1>
+            <h1 className="our_team" style={{fontSize:"36px"}}>Our Team</h1>
             {/* <hr style={{ marginBottom: "50px" }}/> */}
             <div className="honey">
 
@@ -74,7 +74,7 @@ const About = () => {
 
             </div>
          </div>
-         <h1 data-aos="fade-up" data-aos-offset="200" data-aos-duration="1000">Departments</h1>
+         <h1 style={{fontSize:"36px"}} data-aos="fade-up" data-aos-offset="200" data-aos-duration="1000">Departments</h1>
          {/* <hr /> */}
          <div id="department" data-aos="fade-up" data-aos-offset="200" data-aos-duration="1000">
             <DepartMentBook
@@ -107,6 +107,7 @@ const About = () => {
                description="Content Department plays a vital part in the efficient functioning of Shakesjeer - whether be it captions and posts on Social Media handles, Invitations to artists and performers to participate in our events, or compiling our very own magazine of the name Shakesjournal! We have avid writers on board who harness all their capabilities and strengths into a piece of paper, covering a wide range of topics. If you stumble upon on some concise and quality content, it's a high chance that it was written by our content team!"
             />
             <DepartMentBook
+               style={{marginLeft:"200px"}}
                department="Performers"
                teamMember="Rv, Luv, saksham, rv, vansh, karanm devansh, sdfds, fsdf, fsfsdfs, fsf, sf, sfsfsfsdf, ffsfsfsfsfsdf,"
                head="Unnat"

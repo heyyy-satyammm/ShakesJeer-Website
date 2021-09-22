@@ -10,7 +10,8 @@ const About = () => {
       <div data-aos="fade-up" data-aos-offset="20">
          <div id="section_logo">
             <div className="section_logo" data-aos="fade-up" data-aos-offset="200" data-aos-duration="1000">
-               <img style={{ width: "300px", height: "300px",backgroundColor:"red", borderRadius:"50%" }} src={logo} alt="" />
+               <img src={logo} alt="" />
+               {/* style={{ width: "450px", height: "450px",backgroundColor:"red", borderRadius:"50%" }} */}
             </div>
             <div className="box" data-aos="fade-up" data-aos-offset="200" data-aos-duration="1000"> 
                <span></span>
@@ -26,8 +27,8 @@ const About = () => {
             </div>
          </div>
          <div data-aos="fade-up" data-aos-offset="200" data-aos-duration="1000" >
-            <h1 >Our Team</h1>
-            <hr style={{ marginBottom: "50px" }}/>
+            <h1 className="our_team">Our Team</h1>
+            {/* <hr style={{ marginBottom: "50px" }}/> */}
             <div className="honey">
 
 
@@ -74,7 +75,7 @@ const About = () => {
             </div>
          </div>
          <h1 data-aos="fade-up" data-aos-offset="200" data-aos-duration="1000">Departments</h1>
-         <hr />
+         {/* <hr /> */}
          <div id="department" data-aos="fade-up" data-aos-offset="200" data-aos-duration="1000">
             <DepartMentBook
                department="Tech Team"

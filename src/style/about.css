@@ -438,13 +438,8 @@ h1{
 }
 
 
-<<<<<<< HEAD
-
-/*--------------- department css-------------------------- */
-=======
 /*--------------- department css-------------------------- */
 
->>>>>>> AboutUs
 
 #department {
     display: grid;
@@ -581,8 +576,6 @@ h1{
     align-items: center;
     flex-direction: column;
     
-<<<<<<< HEAD
-=======
 }
 
 .card .details .content h2 {
@@ -787,7 +780,6 @@ h1{
     align-items: center;
     flex-direction: column;
     
->>>>>>> AboutUs
 }
 
 .card .details .content h2 {

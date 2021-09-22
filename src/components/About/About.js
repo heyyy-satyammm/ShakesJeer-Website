@@ -74,13 +74,8 @@ const About = () => {
 
             </div>
          </div>
-<<<<<<< HEAD
-         <h1  id = "DepHead" data-aos="fade-up" data-aos-offset="200" data-aos-duration="1000">Departments</h1>
-         <hr />
-=======
          <h1 data-aos="fade-up" data-aos-offset="200" data-aos-duration="1000">Departments</h1>
          {/* <hr /> */}
->>>>>>> AboutUs
          <div id="department" data-aos="fade-up" data-aos-offset="200" data-aos-duration="1000">
             <DepartMentBook
                department ="Tech Team"

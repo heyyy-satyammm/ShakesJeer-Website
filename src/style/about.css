@@ -144,7 +144,7 @@ body {
 }
 
 .box:hover p {
-    transform: scale(1);
+    transform: scale(0.9);
 }
 
 .box:hover {
@@ -177,45 +177,6 @@ body {
 h1{
     font-size: 60px;
     
-}
-.honey {
-    /* background: linear-gradient(110deg, #fdcd3b 60%, #ffed4b 60%); */
-    /* background:linear-gradient( #fac117 , #f8e856 ); */
-    background:linear-gradient( #ff9900 , #ffe608 );
-    padding: 70px;
-    margin: 40px auto;
-}
-
-.item { 
-    /* */
-    width: 9vw;
-    height: 9vw;
-    background-size: cover;
-    background-color: #fff;
-    clip-path: polygon(0% 25%, 0% 75%, 50% 100%, 100% 75%, 100% 25%, 50% 0%);
-    margin: 0.5vw;
-    cursor: pointer;
-}
-
-.item:hover {
-    /* position: absolute;  */
-    transition: 0.5s;
-    transform: scale(1.2);
-    z-index: 1000;
-}
-
-.item:before {
-    content: ' ';
-    position: absolute;
-    width: 9vw;
-    height: 9vw;
-    /* background-color: rgba(0, 0, 0, 0.493); */
-    background-color: rgba(39, 37, 37, 0.356);
-}
-
-.item:hover:before {
-    background-color: rgb(24, 29, 35, 0);
-    transform: scale(1.1);
 }
 
 .comb_0 {
@@ -398,16 +359,45 @@ h1{
     width: 250px;
     margin: 0 12.5px;
 }
+.honey {
+    /* background: linear-gradient(110deg, #fdcd3b 60%, #ffed4b 60%); */
+    /* background:linear-gradient( #fac117 , #f8e856 ); */
+    background:linear-gradient( #ff9900 , #ffe608 );
+    padding: 70px;
+    margin: 40px auto;
+}
+
+.item { 
+    /* */
+    width: 9vw;
+    height: 9vw;
+    background-size: cover;
+    background-color: #fff;
+    clip-path: polygon(0% 25%, 0% 75%, 50% 100%, 100% 75%, 100% 25%, 50% 0%);
+    margin: 0.5vw;
+    cursor: pointer;
+}
+
+.item:hover {
+    transition: 0.5s;
+    transform: scale(1.2);
+}
+
+
+.item:hover:before {
+    background-color: rgb(24, 29, 35, 0);
+    transform: scale(1.1);
+}
+
 
 .honeyDiv {
     display: block;
     margin-left: 11.6vw;
-
     position: absolute;
-    left: 0;
+    top: 1;
     z-index: 1000;
     border-radius: 20px;
-    transform: scale(1.2);
+    transform: scale(1);
     background: linear-gradient(110deg, #fdcd3b 60%, #ffed4b 60%);
     /* background: linear-gradient(#f3bb15, #ece380); */
     
@@ -421,7 +411,6 @@ h1{
     margin-left: 10px;
     margin-right: 10px;
     margin-top: -5px;
-
     
 }
 
@@ -473,14 +462,30 @@ h1{
     transform-origin: left;
     transform-style: preserve-3d;
     background-color: white;
-    transition: 1s;
+    transition: 10s;
     /* box-shadow: 10px 20px 40px rgba(226, 67, 67, 0.5); */
     box-shadow: 10px 20px 40px rgba(2, 2, 2, 0.5);
     /* background: linear-gradient(#fcbf09, #faf9ef); */
      background:linear-gradient(120deg, #FFC60A , yellow,#ad8605 ); 
     border-color: solid;
+    border-radius: 5px;
+    border-width: 0 100px 100px 0;
     /* background:linear-gradient( #ff7300 , #ffe608 ); */
 }
+
+.card .imgBox:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: inline-block;
+    width: 3rem;
+    height: 5rem;
+    transform: translate(-1.1rem, -1.3rem) rotate(-32.7deg);
+    background: linear-gradient(to left bottom, transparent 50%, #7da9b3 50px,#d2f1fb 60px, #025364 50px);
+    box-shadow: 0 6px 4px -4px #112429;
+}
+
 .card .imgBox p{
     
     font-size: 20px;

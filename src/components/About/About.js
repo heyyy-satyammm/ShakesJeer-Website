@@ -74,11 +74,16 @@ const About = () => {
 
             </div>
          </div>
+<<<<<<< HEAD
+         <h1  id = "DepHead" data-aos="fade-up" data-aos-offset="200" data-aos-duration="1000">Departments</h1>
+         <hr />
+=======
          <h1 data-aos="fade-up" data-aos-offset="200" data-aos-duration="1000">Departments</h1>
          {/* <hr /> */}
+>>>>>>> AboutUs
          <div id="department" data-aos="fade-up" data-aos-offset="200" data-aos-duration="1000">
             <DepartMentBook
-               department="Tech Team"
+               department ="Tech Team"
                teamMember="Rv, Luv, saksham, rv, vansh, karanm devansh, sdfds, fsdf, fsfsdfs, fsf, sf, sfsfsfsdf, ffsfsfsfsfsdf,"
                head="Unnat"
                description="Department of the Shakesjeer society enables and assists the people to explore in the field of web, UX, UI designing and a lot more. In this Tech- friendly world, 

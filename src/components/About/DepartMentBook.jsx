@@ -3,7 +3,12 @@ import React from 'react'
 function DepartMentBook(props) {
     return (<div className="card " data-aos="fade-up" data-aos-offset="200" data-aos-duration="1000"
         style={
+<<<<<<< HEAD
+            {
+                 height: "55vh" }} >
+=======
             { height: "55vh" }} >
+>>>>>>> AboutUs
         <div className="imgBox" >
             <div> <p> {props.department} </p><p>{props.description}</p>
             </div>
@@ -18,5 +23,4 @@ function DepartMentBook(props) {
             </div> </div> </div>
     )
 }
-
 export default DepartMentBook

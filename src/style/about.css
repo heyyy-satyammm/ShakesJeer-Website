@@ -14,7 +14,7 @@ body {
 #section_logo {
     display: grid;
     grid-template-columns: 50% 50%;
-    margin: 20px auto;
+    margin: 40px auto;
     width: "100%";
     padding-right: 20px;
     padding-left: 20px;
@@ -22,53 +22,77 @@ body {
 
 .section_logo {
     margin: 0 auto;
-    padding-top: 30px;
+    padding-top: 25px;
     padding-bottom: 30px;
+    
 }
 
 .section_logo:hover {
     transition: 1s;
-    transform: scale(1.1)
+    transform: scale(1.1);
+    
 }
 
 .section_logo::after {
     transition: 0.4s;
     transform: scale(1);
 }
+.section_logo img{
+    width: 450px;
+    height: 450px;
+    border-radius:50%;
+    background-color: rgb(255, 255, 255);
+}
 
 .section_logo img:hover {
     box-shadow: 0 25px 30px rgba(0, 0, 0, 0.5);
+    /* box-shadow: 0 25px 130px rgba(228, 198, 62, 0.603); */
 }
 
-@media (max-width:800px) {
+@media (max-width:900px) {
     #section_logo {
         grid-template-columns: 100%;
         margin: 0 auto;
         width: "90%"
     }
+    .section_logo img{
+        width: 300px;
+        height: 300px;
+        border-radius:1000px;
+        background-color: rgb(255, 255, 255);
+    }
 }
 
 .box {
+    
     transform: translate(0%, -0%);
-    width: 100%;
-    /* accordingly change this */
-    height: fit-content;
-    /* accordingly change this */
+    width: 100%;     /* accordingly change this */
+    height: fit-content;   /* accordingly change this */
     /* background: #262626; */
     box-sizing: border-box;
     padding: 15px;
     transition: 0.5s;
     overflow: hidden;
+    
+    /* background:linear-gradient( #fac117 , #f8e856 ); */
+    background:linear-gradient( #ff9900 , #ffe608 );
+    border-radius: 10px;
+
+    
+    
+    
 }
 
 .box p {
-    margin: 10px;
-    padding: 0;
+    margin: 5px;
+    padding: 15px;
     /* color: #fff; */
-    font-size: 18px;
+    font-size: 24px;
     transition: 0.5s;
     transition-delay: 0.5s;
     transform: scale(0.8);
+    
+    
 }
 
 .box:before {
@@ -78,13 +102,15 @@ body {
     height: 0%;
     top: 0;
     left: 0;
-    border-top: 2px solid rgb(241, 9, 9);
-    /* accordingly change this*/
-    border-left: 2px solid rgb(250, 11, 11);
-    /* accordingly change this*/
+    border-top: 15px solid #fff;
+    /* accordingly change this 8*/
+    border-left: 15px solid #fff;
+    /* accordingly change this 8*/
     opacity: 0;
-    transition: 0.9s;
+    transition: 2.3s;
     box-sizing: border-box;
+
+    transform: skew(5deg,4deg);
 }
 
 .box:after {
@@ -94,13 +120,15 @@ body {
     height: 0%;
     bottom: 0;
     right: 0;
-    border-bottom: 2px solid rgb(230, 141, 9);
+    border-bottom: 15px solid #fff;
     /*accordingly change this*/
-    border-right: 2px solid rgb(218, 138, 18);
+    border-right: 15px solid #fff;
     /* accordingly change this*/
     opacity: 0;
-    transition: 0.9s;
+    transition: 2.9s;
     box-sizing: border-box;
+
+    transform: skew(5deg,4deg);
 }
 
 .box:hover:before {
@@ -121,6 +149,9 @@ body {
 
 .box:hover {
     box-shadow: 0 25px 30px rgba(0, 0, 0, 0.5);
+    /* background:linear-gradient(110deg, #fdcd3b 60%, #ffed4b 60%); */
+    /* background:linear-gradient( #fac117 , #f8e856 );
+    border-radius: 10px; */
 }
 
 .box span {
@@ -129,7 +160,8 @@ body {
     left: 120%;
     width: 100%;
     height: 100%;
-    background: rgba(255, 255, 255, 0.1);
+    /* background: rgba(255, 255, 255, 0.1); */
+    background: rgba(150, 146, 146, 0.089);
     transition: 0.5s;
     transition-delay: 1s;
     transform: skewX(5deg);
@@ -140,14 +172,22 @@ body {
 }
 
 
-/* honey comb css */
+/*------------ honey comb css----------------- */
 
+h1{
+    font-size: 60px;
+    
+}
 .honey {
-    background: linear-gradient(110deg, #fdcd3b 60%, #ffed4b 60%);
+    /* background: linear-gradient(110deg, #fdcd3b 60%, #ffed4b 60%); */
+    /* background:linear-gradient( #fac117 , #f8e856 ); */
+    background:linear-gradient( #ff9900 , #ffe608 );
+    padding: 70px;
     margin: 40px auto;
 }
 
-.item {
+.item { 
+    /* */
     width: 9vw;
     height: 9vw;
     background-size: cover;
@@ -158,9 +198,10 @@ body {
 }
 
 .item:hover {
+    /* position: absolute;  */
     transition: 0.5s;
-    transform: scale(1.5);
-    z-index: 1;
+    transform: scale(1.2);
+    z-index: 1000;
 }
 
 .item:before {
@@ -168,7 +209,8 @@ body {
     position: absolute;
     width: 9vw;
     height: 9vw;
-    background-color: rgba(0, 0, 0, 0.493);
+    /* background-color: rgba(0, 0, 0, 0.493); */
+    background-color: rgba(39, 37, 37, 0.356);
 }
 
 .item:hover:before {
@@ -208,7 +250,7 @@ body {
     display: flex;
     justify-content: center;
     grid-template-columns: 195px 190px 138px 55px;
-    margin: -2vw 1vw 0 -27vw;
+    margin: -2.2vw 1vw 0 -29vw;
     /*upper ki height   left side  #  right side */
 }
 
@@ -360,24 +402,35 @@ body {
 .honeyDiv {
     display: block;
     margin-left: 11.6vw;
+
     position: absolute;
     left: 0;
     z-index: 1000;
+    border-radius: 20px;
+    transform: scale(1.2);
     background: linear-gradient(110deg, #fdcd3b 60%, #ffed4b 60%);
+    /* background: linear-gradient(#f3bb15, #ece380); */
+    
+    
 }
 
 .honeyDiv h1 {
+    padding-top: 9px;
     font-size: 26px;
     margin-bottom: -10px;
     margin-left: 10px;
     margin-right: 10px;
     margin-top: -5px;
+
+    
 }
 
 .honeyDiv p {
+    padding-top: 6px;
     margin-top: -10px;
     margin-left: 10px;
     margin-right: 10px;
+    
 }
 
 .notHoneyDiv {
@@ -385,8 +438,13 @@ body {
 }
 
 
+<<<<<<< HEAD
 
 /*--------------- department css-------------------------- */
+=======
+/*--------------- department css-------------------------- */
+
+>>>>>>> AboutUs
 
 #department {
     display: grid;
@@ -523,6 +581,213 @@ body {
     align-items: center;
     flex-direction: column;
     
+<<<<<<< HEAD
+=======
+}
+
+.card .details .content h2 {
+    text-align: center;
+    font-weight: 700;
+    line-height: 1em;
+}
+
+.card .details .content h2 span {
+    font-size: 0.8em;
+    color: #e21212;
+}
+
+.card .details .content .social-icons {
+    position: relative;
+    display: flex;
+}
+
+.card .details .content .social-icons a {
+    display: inline-block;
+    margin-top: 10px;
+    width: 35px;
+    height: 35px;
+    background: #333;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    margin: 5px;
+    font-size: 18px;
+    transition: 0.2s;
+}
+
+.card .details .content .social-icons a:hover {
+    background: #e21212;
+}
+
+@import url('//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css');
+#social {
+    margin: 20px 10px;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+#department {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-bottom: 40px;
+}
+
+@media (max-width:800px) {
+    #department {
+        grid-template-columns: auto;
+    }
+}
+
+.card {
+    background: #fff;
+    transform-style: preserve-3d;
+    transform: perspective(1000px);
+    box-shadow: 10px 20px 40px rgba(2, 2, 2, 0.5);
+    transition: 10s;
+    margin-top: 50px;
+    margin-left: 7%;
+    margin-right: 7%;
+
+
+    background: linear-gradient(#fcbf09, #faf9ef);
+}
+
+.card .imgBox {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    transform-origin: left;
+    transform-style: preserve-3d;
+    background-color: white;
+    transition: 1s;
+    
+    box-shadow: 10px 20px 40px rgba(2, 2, 2, 0.5);
+
+    
+    background:linear-gradient( #f87509 , #ffe608 );
+}
+.card .imgBox p{
+    padding: 20px;
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  
+}
+
+
+@media (max-width:1300px){
+    .card .imgBox p{
+        padding: 10PX;
+    font-size: 16.5px;
+    }
+}
+@media (max-width:990px){
+    .card .imgBox p{
+        padding: 10PX;
+    font-size: 15px;
+    }
+}
+@media (max-width:790px){
+    .card .imgBox p{
+        padding: 10PX;
+    font-size: 20px;
+    }
+}
+@media (max-width:540px){
+    .card .imgBox p{
+        padding: 10PX;
+    font-size: 15px;
+    }
+}
+@media (max-width:370px){
+    .card .imgBox p{
+        padding: 10PX;
+    font-size: 13px;
+    }
+}
+
+
+
+
+.card:hover .imgBox {
+    
+    transform: translateY(-930px);
+    transition-duration: 1s;
+}
+
+.card .imgBox div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+}
+
+.card .imgBox div img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+}
+
+.card .details {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card .details .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+>>>>>>> AboutUs
 }
 
 .card .details .content h2 {
@@ -571,4 +836,4 @@ body {
 #social {
     margin: 20px 10px;
     text-align: center;
-}
+} */

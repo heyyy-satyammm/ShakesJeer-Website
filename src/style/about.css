@@ -13,11 +13,12 @@ body {
 
 #section_logo {
     display: grid;
-    grid-template-columns: 50% 50%;
-    margin: 40px auto;
+    grid-template-columns: 45% 50%;
+    margin: 0px auto;
     width: "100%";
     padding-right: 20px;
     padding-left: 20px;
+    padding-top: 80px;
 }
 
 .section_logo {
@@ -38,10 +39,12 @@ body {
     transform: scale(1);
 }
 .section_logo img{
-    width: 450px;
-    height: 450px;
+    width: 400px;
+    height: 400px;
+    margin-top: -20px;
     border-radius:50%;
-    background-color: rgb(255, 255, 255);
+    /* background-color: rgb(255, 255, 255); */
+    background-color: red;
 }
 
 .section_logo img:hover {
@@ -445,12 +448,13 @@ h1{
     background: #fff;
     transform-style: preserve-3d;
     transform: perspective(1000px);
-    box-shadow: 10px 20px 40px rgba(2, 2, 2, 0.5);
+    box-shadow: 10px 20px 40px rgba(251, 201, 15, 0.5);
     transition: 10s;
     margin-top: 50px;
     margin-left: 7%;
     margin-right: 7%;
     background: linear-gradient(#fcbf09, #faf9ef);
+    border-radius: 15px;
 }
 
 .card .imgBox {
@@ -463,11 +467,11 @@ h1{
     background-color: white;
     transition: 10s;
     /* box-shadow: 10px 20px 40px rgba(226, 67, 67, 0.5); */
-    box-shadow: 10px 20px 40px rgba(2, 2, 2, 0.5);
+    box-shadow: 10px 20px 40px rgba(251, 201, 15, 0.5);
     /* background: linear-gradient(#fcbf09, #faf9ef); */
      background:linear-gradient(120deg, #FFC60A , yellow,#ad8605 ); 
     border-color: solid;
-    border-radius: 5px;
+    border-radius: 15px;
     border-width: 0 100px 100px 0;
     /* background:linear-gradient( #ff7300 , #ffe608 ); */
 }
@@ -482,12 +486,12 @@ h1{
     height: 5rem;
     transform: translate(-1rem, -1.5rem) rotate(-32.7deg);
     background: linear-gradient(to left bottom, transparent 50%, #7da9b3 50px,#d2f1fb 60px, #025364 50px);
-    box-shadow: 0 6px 4px -4px #112429;
+    /* box-shadow: 0 6px 4px -4px rgba(251, 201, 15, 0.5); */
 }
 
 .card .imgBox p{
     
-    font-size: 20px;
+    font-size: 18px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   padding:0 40px 0 40px ;
   text-align: justify;
@@ -572,6 +576,9 @@ h1{
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: white;
+    color: rgb(32,32,32);
+    border-radius: 15px;
 }
 
 .card .details .content {
@@ -585,12 +592,12 @@ h1{
 .card .details .content h2 {
     text-align: center;
     font-weight: 700;
-    line-height: 1em;
+    margin-top:-130px;
 }
 
 .card .details .content h2 span {
     font-size: 0.8em;
-    color: #e21212;
+    color:rgb(32,32,32);
 }
 
 .card .details .content .social-icons {
@@ -624,8 +631,30 @@ h1{
     text-align: center;
 }
 
-
-
+.headingEffect::before {  
+    transform: scaleX(0);
+    transform-origin: bottom right;
+}
+.headingEffect:hover::before {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+  
+.headingEffect::before {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    inset: 0 0 0 0;
+    background: rgba(251, 201, 15, 0.5);
+    z-index: -1;
+    transition: transform .3s ease;
+  }
+.headingEffect{
+    position: relative;
+  font-size: 2.4rem !important;
+}
+ 
 
 
 

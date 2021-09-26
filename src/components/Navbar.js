@@ -36,7 +36,9 @@ function Navbar() {
             </ul>
           </nav>
           <div className="navbar">
-            <img src={logo} alt="logo" width="100px" />
+            <div className="logo">
+            <img src={logo} alt="logo" width="70px" />
+            </div>
             <Link to="#" className="menu-bars">
               <FaIcons.FaBars onClick={showSidebar} />
             </Link>

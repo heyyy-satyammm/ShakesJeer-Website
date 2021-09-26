@@ -1,7 +1,9 @@
 import React from "react";
-import * as FaIcons from "react-icons/fa";
 import * as AiIcons from "react-icons/ai";
 import * as IoIcons from "react-icons/io";
+import * as RiIcons from "react-icons/ri";
+import * as MdIcons from "react-icons/md";
+import * as CgIcons from "react-icons/cg";
 
 export const SidebarData = [
   {
@@ -13,31 +15,32 @@ export const SidebarData = [
   {
     title: "About",
     path: "/about",
-    icon: <IoIcons.IoIosPaper />,
+    icon: <RiIcons.RiTeamFill />,
     cName: "nav-text",
   },
   {
     title: "Events",
     path: "/event",
-    icon: <FaIcons.FaCartPlus />,
+    icon: <MdIcons.MdEventSeat />,
     cName: "nav-text",
   },
   {
-    title: "Team",
-    path: "/team",
-    icon: <IoIcons.IoMdPeople />,
+    title: "ShakesJournal",
+    path: "/shakesjournal",
+    icon: <IoIcons.IoIosJournal />,
     cName: "nav-text",
   },
   {
-    title: "Messages",
-    path: "/messages",
-    icon: <FaIcons.FaEnvelopeOpenText />,
+    title: "Resources",
+    path: "/resources",
+    icon: <CgIcons.CgNotes />,
     cName: "nav-text",
   },
   {
-    title: "Support",
-    path: "/support",
-    icon: <IoIcons.IoMdHelpCircle />,
+    title: "Contact Us",
+    path: "/contact",
+    icon: <IoIcons.IoMdContacts />,
     cName: "nav-text",
   },
+  
 ];

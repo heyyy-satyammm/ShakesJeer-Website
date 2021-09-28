@@ -14,7 +14,7 @@ function Navbar() {
 
   return (
     <>
-      <IconContext.Provider value={{ color: "#fff" }}>
+      <IconContext.Provider value={{ color: "#fec701" }} >
         <div className="full">
           <nav className={sidebar ? "nav-menu active" : "nav-menu"}>
             <ul className="nav-menu-items" onClick={showSidebar}>
@@ -26,8 +26,8 @@ function Navbar() {
               {SidebarData.map((item, index) => {
                 return (
                   <li key={index} className={item.cName}>
-                    <Link to={item.path}>
-                      {item.icon}
+                    <Link to={item.path} >
+                      {item.icon }
                       <span>{item.title}</span>
                     </Link>
                   </li>

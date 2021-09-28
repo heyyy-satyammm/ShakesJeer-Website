@@ -1,15 +1,14 @@
 import React from "react";
-import * as AiIcons from "react-icons/ai";
+import * as FaIcons from "react-icons/fa";
 import * as IoIcons from "react-icons/io";
 import * as RiIcons from "react-icons/ri";
-import * as MdIcons from "react-icons/md";
-import * as CgIcons from "react-icons/cg";
+import * as ImIcons from "react-icons/im";
 
 export const SidebarData = [
   {
     title: "Home",
     path: "/",
-    icon: <AiIcons.AiFillHome />,
+    icon: <FaIcons.FaHome />,
     cName: "nav-text",
   },
   {
@@ -21,25 +20,25 @@ export const SidebarData = [
   {
     title: "Events",
     path: "/event",
-    icon: <MdIcons.MdEventSeat />,
+    icon: <IoIcons.IoIosTv />,
     cName: "nav-text",
   },
   {
     title: "ShakesJournal",
     path: "/shakesjournal",
-    icon: <IoIcons.IoIosJournal />,
+    icon: <ImIcons.ImNewspaper />,
     cName: "nav-text",
   },
   {
     title: "Resources",
     path: "/resources",
-    icon: <CgIcons.CgNotes />,
+    icon: <IoIcons.IoIosJournal />,
     cName: "nav-text",
   },
   {
     title: "Contact Us",
     path: "/contact",
-    icon: <IoIcons.IoMdContacts />,
+    icon: <RiIcons.RiContactsFill />,
     cName: "nav-text",
   },
   

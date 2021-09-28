@@ -1,5 +1,5 @@
 .navbar {
-  background-color:  #1B1B1B;
+  background-color:  #161616;
   height: 80px;
   display: flex;
   justify-content: space-between;
@@ -20,7 +20,7 @@
 }
 
 .nav-menu {
-  background-color:#161616;
+  background-color:#1B1B1B;
   width: 25%;
   height: 100%;
   display: flex;
@@ -63,7 +63,8 @@
 }
 
 .nav-text a:hover {
-  background-color: #006be6;
+  background-color: #fec701;
+  color: #161616;
   font-size: 28px;
 }
 
@@ -72,7 +73,7 @@
 }
 
 .navbar-toggle {
-  background-color:  #1B1B1B;
+  background-color:  #161616;
   width: 100%;
   height: 80px;
   display: flex;
@@ -81,5 +82,7 @@
 }
 
 span {
-  margin-left: 29px;
+  margin-left: 25px;
 }
+
+

@@ -77,7 +77,7 @@ body {
     transition: 0.5s;
     overflow: hidden;
     /* background:linear-gradient( #fac117 , #f8e856 ); */
-    background:linear-gradient( #ff9900 , #ffe608 );
+    background:linear-gradient(  #ffe608,#ff9900);
     border-radius: 10px;
 
     
@@ -183,6 +183,7 @@ h1{
 
 .comb_0 {
     display: flex;
+    background-color: #ffeb3b;
     justify-content: center;
     grid-template-columns: 195px 195px 195px 195px;
     margin: -2.2vw 0px 0px 0vw;
@@ -191,6 +192,7 @@ h1{
 .comb_1 {
     display: flex;
     justify-content: center;
+    background-color: #fdd835;
     grid-template-columns: 195px 195px 195px 195px;
     margin: -2.2vw 0px 0px 0vw;
 }
@@ -198,6 +200,7 @@ h1{
 .comb_2 {
     display: flex;
     justify-content: center;
+    background-color: #fbc02d;
     grid-template-columns: 195px 195px 195px 195px;
     margin: -2.2vw 0px 0px 0vw;
 }
@@ -205,6 +208,7 @@ h1{
 .comb_3 {
     display: flex;
     justify-content: center;
+    background-color: #f9a825;
     grid-template-columns: 15px 15px 95px 15px;
     margin: -2.2vw 0px 0px 0vw;
 }
@@ -212,6 +216,7 @@ h1{
 .comb_4 {
     display: flex;
     justify-content: center;
+    /* background-color: #f57f17; */
     grid-template-columns: 195px 190px 138px 55px;
     margin: -2.2vw 1vw 0 -29vw;
     /*upper ki height   left side  #  right side */
@@ -220,6 +225,7 @@ h1{
 .comb_5 {
     display: flex;
     justify-content: center;
+    /* background-color: #f57f17; */
     grid-template-columns: 195px 10px 18px 5px;
     margin: -10vw 1vw 0 31vw;
 }
@@ -364,9 +370,10 @@ h1{
 .honey {
     /* background: linear-gradient(110deg, #fdcd3b 60%, #ffed4b 60%); */
     /* background:linear-gradient( #fac117 , #f8e856 ); */
-    background:linear-gradient( #ff9900 , #ffe608 );
-    padding: 70px;
-    margin: 40px auto;
+    background:linear-gradient( #ffe608,#ff9900  );
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin: 0px auto;
 }
 
 .item { 
@@ -382,9 +389,17 @@ h1{
 
 .item:hover {
     transition: 0.5s;
-    transform: scale(1.2);
+    transform: scale(1.3);
 }
-
+.item:before
+{
+  content: ' ';
+  position: absolute;
+  width: 9vw;
+  height :9vw;
+  background-color: rgba(0, 0, 0, 0.493);
+  
+}
 
 .item:hover:before {
     background-color: rgb(24, 29, 35, 0);
@@ -396,11 +411,14 @@ h1{
     display: block;
     margin-left: 11.6vw;
     position: absolute;
+    padding-left: 10px;
+    padding-right: 10px;
     top: 1;
     z-index: 1000;
     border-radius: 20px;
     transform: scale(1);
     background: linear-gradient(110deg, #fdcd3b 60%, #ffed4b 60%);
+    box-shadow: 0 30px 40px rgba(0,0,0,.3);
     /* background: linear-gradient(#f3bb15, #ece380); */
     
     
@@ -438,12 +456,17 @@ h1{
     margin-bottom: 40px;
 }
 
-@media (max-width:800px) {
+@media (max-width:700px) {
     #department {
         grid-template-columns: auto;
     }
-}
 
+}
+@media (min-width:700px) {
+    .dept{
+        margin:0 23%;
+    }
+}
 .card {
     background: #fff;
     transform-style: preserve-3d;
@@ -467,7 +490,7 @@ h1{
     background-color: white;
     transition: 10s;
     /* box-shadow: 10px 20px 40px rgba(226, 67, 67, 0.5); */
-    box-shadow: 10px 20px 40px rgba(251, 201, 15, 0.5);
+    
     /* background: linear-gradient(#fcbf09, #faf9ef); */
      background:linear-gradient(120deg, #FFC60A , yellow,#ad8605 ); 
     border-color: solid;
@@ -475,7 +498,9 @@ h1{
     border-width: 0 100px 100px 0;
     /* background:linear-gradient( #ff7300 , #ffe608 ); */
 }
-
+.card .imgBox:hover{
+    box-shadow: 10px 20px 40px rgba(251, 201, 15, 0.5);
+}
 .card .imgBox:before{
     content: "";
     position: absolute;
@@ -576,7 +601,7 @@ h1{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: white;
+    background: linear-gradient( #faf9ef,#87cefa);
     color: rgb(32,32,32);
     border-radius: 15px;
 }
@@ -585,6 +610,7 @@ h1{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 40px;
     flex-direction: column;
     
 }
@@ -592,12 +618,29 @@ h1{
 .card .details .content h2 {
     text-align: center;
     font-weight: 700;
-    margin-top:-130px;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+    margin-top:-50px;
+    font-size: 32px;
+    color: #913831;
+}
+.card .details .content h3{
+    font-weight: 500;
+    margin-right: 30px;
+    align-self: flex-end;
+}
+#social p{
+    font-size: 18px;
 }
 
+#social {
+    padding: 20px;
+
+}
 .card .details .content h2 span {
     font-size: 0.8em;
     color:rgb(32,32,32);
+    background-color: yellow;
 }
 
 .card .details .content .social-icons {
@@ -646,7 +689,8 @@ h1{
     position: absolute;
     top: 0; right: 0; bottom: 0; left: 0;
     inset: 0 0 0 0;
-    background: rgba(251, 201, 15, 0.5);
+    /* background: rgba(251, 201, 15, 0.5); */
+    background-color: #fec90f;
     z-index: -1;
     transition: transform .3s ease;
   }

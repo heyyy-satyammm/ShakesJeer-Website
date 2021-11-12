@@ -94,7 +94,8 @@ a.button {
   border-radius: 3px;
   background-color: rgba(49, 49, 49, 0.5);
 }
-a.button:hover, a.button:focus {
+a.button:hover,
+a.button:focus {
   background-color: rgba(49, 49, 49, 0.5);
 }
 
@@ -482,7 +483,6 @@ a.button:hover, a.button:focus {
   overflow: hidden;
   text-overflow: ellipsis;
 }
-
 
 /*
  *  Book Rotate

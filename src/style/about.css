@@ -44,7 +44,7 @@ body {
     margin-top: -20px;
     border-radius:50%;
     /* background-color: rgb(255, 255, 255); */
-    background-color: red;
+    background-color: rgb(255, 255, 255);
 }
 
 .section_logo img:hover {
@@ -234,49 +234,42 @@ h1{
 /* ------------------------------------------------- */
 
 .comb_0 .item {
-    /* background-image: url('./1.jpg'); */
     background-size: cover;
     background-repeat: no-repeat;
+    /* background-position: -150px 0px; */
 }
 
 .comb_1 .item {
-    /* background-image: url('./1.jpg'); */
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .comb_2 .item:nth-child(1) {
-    /* background-image: url('./1.jpg'); */
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .comb_2 .item:nth-child(2) {
-    /* background-image: url('./1.jpg'); */
     background-size: cover;
     background-repeat: no-repeat;
     /* background-position:0 -60px; */
 }
 
 .comb_2 .item:nth-child(3) {
-    /* background-image: url('./1.jpg'); */
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .comb_2 .item:nth-child(4) {
-    /* background-image: url('./1.jpg'); */
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .comb_2 .item:nth-child(5) {
-    /* background-image: url('./1.jpg'); */
     background-size: cover;
 }
 
 .comb_3 .item:nth-child(1) {
-    /* background-image: url('./1.jpg'); */
     background-size: cover;
     background-repeat: no-repeat;
     background-position: -50px 0px;
@@ -488,7 +481,7 @@ h1{
     transform-origin: left;
     transform-style: preserve-3d;
     background-color: white;
-    transition: 10s;
+    transition: 7s;
     /* box-shadow: 10px 20px 40px rgba(226, 67, 67, 0.5); */
     
     /* background: linear-gradient(#fcbf09, #faf9ef); */

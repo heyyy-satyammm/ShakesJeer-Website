@@ -490,7 +490,7 @@ a.button:focus {
 .bk-img {
   position: relative;
   display: inline-block;
-  float: left;
+  /* float: left; */
   padding-right: 30px;
   list-style: none;
   /* Individual style & artwork */

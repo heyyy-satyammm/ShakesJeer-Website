@@ -1,83 +1,63 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
-
-body .container {
-  width: 750px;
-  margin: 50px auto 0px auto;
-  text-align: center;
-}
-body .container h1 {
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 30px;
-  margin-bottom: 15px;
-}
-body .container h1 span {
-  font-weight: 700;
-  font-style: italic;
-  color: #d90368;
-  border-bottom: 2px dashed currentColor;
-}
-body .container .button-effect {
+body .button-effect {
   padding: 1px 10px;
 }
-body .container .button-effect h2 {
+body .button-effect h2 {
   font-family: "Roboto", sans-serif;
   font-size: 50px;
   margin-bottom: 60px;
 }
-body .container .button-effect a {
+body .button-effect a {
   margin-right: 10px;
 }
-body .container .button-effect a:nth-child(2) {
+body .button-effect a:nth-child(2) {
   background-color: #370d59;
 }
-body .container .button-effect a:nth-child(2):hover {
+body .button-effect a:nth-child(2):hover {
   background-color: #8920df;
 }
-body .container .button-effect a:nth-child(3) {
+body .button-effect a:nth-child(3) {
   background-color: #660066;
 }
-body .container .button-effect a:nth-child(3):hover {
+body .button-effect a:nth-child(3):hover {
   background-color: #ff00ff;
 }
-body .container .button-effect a:nth-child(4) {
+body .button-effect a:nth-child(4) {
   background-color: #135153;
 }
-body .container .button-effect a:nth-child(4):hover {
+body .button-effect a:nth-child(4):hover {
   background-color: #2fcad0;
 }
-body .container .button-effect a:nth-child(5) {
+body .button-effect a:nth-child(5) {
   background-color: #66000e;
 }
-body .container .button-effect a:nth-child(5):hover {
+body .button-effect a:nth-child(5):hover {
   background-color: #ff0022;
 }
-body .container .button-effect a:nth-child(6) {
+body .button-effect a:nth-child(6) {
   background-color: #1c204a;
 }
-body .container .button-effect a:nth-child(6):hover {
+body .button-effect a:nth-child(6):hover {
   background-color: #4650b9;
 }
-body .container .button-effect a:nth-child(7) {
+body .button-effect a:nth-child(7) {
   background-color: #412539;
 }
-body .container .button-effect a:nth-child(7):hover {
+body .button-effect a:nth-child(7):hover {
   background-color: #a25d8e;
 }
-body .container .button-effect a:nth-child(8) {
+body .button-effect a:nth-child(8) {
   background-color: #444b1b;
 }
-body .container .button-effect a:nth-child(8):hover {
+body .button-effect a:nth-child(8):hover {
   background-color: #a9bb44;
 }
-body .container .button-effect a:nth-child(9) {
+body .button-effect a:nth-child(9) {
   background-color: #513915;
 }
-body .container .button-effect a:nth-child(9):hover {
+body .button-effect a:nth-child(9):hover {
   background-color: #cb8f34;
 }
-body .container .button-effect a:last-child {
+body .button-effect a:last-child {
   margin-right: 0px;
 }
 

@@ -29,7 +29,8 @@ function Resources() {
         >
           <div className="page-container">
             <div>
-              <h1 className="resources-heading">Resources</h1>
+              <h1 className="resources-heading">University Resources</h1>
+              <hr />
               <p className="resources-details">
                 Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry
@@ -82,7 +83,7 @@ function Resources() {
                           bodyStyle={{
                             width: "100%",
                             height: "100%",
-                            marginTop: "-60px",
+                            marginTop: "100px",
                           }}
                           style={{
                             borderRadius: "5px",

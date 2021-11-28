@@ -23,11 +23,15 @@
 
 import React from "react";
 import "./App.css";
-import Navbar from "./components/Navbar";
+import Navbar from "./components/Navbar/Navbar";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import Home from "./pages/Home";
-//import Reports from "./pages/Reports";
-import Products from "./pages/Products";
+import Home from "./pages/Home/Home";
+import About from "./pages/About/About";
+import Events from "./pages/Events/Events";
+
+// import Events from "./pages/Events/Events";
+import Resources from "./pages/Resources/Resources";
+// import ShakesJournal from "./pages/ShakesJournal/ShakesJournal";
 
 function App() {
   return (
@@ -37,8 +41,12 @@ function App() {
         <Switch>
           <Route path="/" exact component={Home} />
           {/* <Route path="/reports" component={Reports} /> */}
-          <Route path="/about" component={Products} />
+          <Route path="/about" component={About} />
+          {/* <Route path="/events" component={Events} /> */}
+          <Route path="/about" component={About} />
+          <Route path="/resources" component={Resources} />
         </Switch>
+        {/* <Footer /> */}
       </Router>
     </>
   );
